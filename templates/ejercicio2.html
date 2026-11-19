@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ejercicio 2</title></head>
+<body>
+    <h1>Ejercicio 2 - Nombres</h1>
+    <form method="POST">
+        Nombre 1: <input type="text" name="nombre1" required><br><br>
+        Nombre 2: <input type="text" name="nombre2" required><br><br>
+        Nombre 3: <input type="text" name="nombre3" required><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    {% if nombre_mayor is not none %}
+        <h2>Nombre mayor: {{ nombre_mayor }}</h2>
+        <h2>Cantidad de caracteres: {{ cantidad }}</h2>
+    {% endif %}
+    <br>
+    <a href="/">Volver</a>
+</body>
+</html>
